@@ -22,8 +22,6 @@ res = my_fxn.delay(test_json)
 task_result = res.get(timeout=10)
 logger.info(task_result)
 
-# TODO Get worker function results 
-
 logger.info('tests completed')
 
 
