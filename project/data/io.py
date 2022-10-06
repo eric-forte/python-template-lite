@@ -13,7 +13,7 @@ class Pipe(object):
         self.output_type = "JSON"
     
     def output(self, input_obj: dataclass):
-        if self.output_type is "JSON":
+        if self.output_type == "JSON":
             return self.out_json(input_obj)
         return input_obj
     
