@@ -23,6 +23,8 @@ class Pipe(object):
         if not type(json_string) is str:
             raise TypeError("Input must be JSON data as a string")
         json_obj = json.loads(json_string)
+        # NOTE could/should use serialization here instead
+        # Serialization benchmarks for reference: https://voidfiles.github.io/python-serialization-benchmark/
         # Check Types of Input
         if not self.correct_type(json_obj, int):
             raise TypeError("Input(s) must be an int")
