@@ -10,6 +10,7 @@ This project user celery workers for data processing. The `app` is to read, proc
 * Replace existing tasks in `tasks.py` with desired tasks, add custom i/o operations to `io.py`, and add/replace dataclasses in `classes.py` 
 
 * Use Makefile to deploy worker and/or run tests as desired
+    * To deploy run `make deploy`
 
 * Rabbitmq is REQUIRED for this to function. One can run rabitmq in a docker container locally and use current settings via `docker run -d -p 5672:5672 rabbitmq`
 
